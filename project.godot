@@ -16,12 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="Spritesheet Animation"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=448
-window/size/height=752
+window/size/width=1080
+window/size/height=920
 
 [rendering]
 
