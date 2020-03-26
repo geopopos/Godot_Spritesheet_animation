@@ -25,6 +25,8 @@ func _process(delta):
 		animation_name = "walk_up"
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
+		if Input.is_action_pressed("ui_select"):
+			velocity = velocity.normalized() * speed * 1.5 
 		$AnimationPlayer.play(animation_name)
 	else:
 		$AnimationPlayer.stop()
